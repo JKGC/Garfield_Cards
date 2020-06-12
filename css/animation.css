@@ -1,0 +1,115 @@
+.fadeIn {
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fadeInDown {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0,-100%,0);
+        -webkit-transform: translate3d(0,-100%,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+    }
+}
+.fadeInUp {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeInUp;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0,100%,0);
+        -webkit-transform: translate3d(0,100%,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+    }
+}
+
+
+.VelozIn {
+ 
+  animation: VelozIn 1s;
+
+}
+
+
+
+@keyframes VelozIn {
+ 
+0% {
+    opacity: 0;
+    transform: translateX(-100vw) skewX(70deg);
+}
+    
+60% {
+    opacity: 1;
+    transform: skewX(-20deg);
+    
+}
+  
+80% {
+    transform: skewX(15deg);
+}
+  
+}
+
+.reboundOut {
+ 
+  animation: reboundOut 2s;
+ 
+}
+@keyframes reboundOut {
+ 
+1%{
+    transform: translateY(-500px);
+    opacity: 0;
+}
+  
+  
+80% {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+99% {
+    transform: translateY(0);
+    width: 250px;
+    
+}
+100% {
+    transform: translateY(0);
+    width: 200px;
+    
+}
+
+}

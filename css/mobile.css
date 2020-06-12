@@ -1,0 +1,34 @@
+@media (max-width: 600px) {
+    .products {
+        display: inherit;
+        max-height: none;
+    }
+    .product {
+        margin-top: 0;
+    }
+    .main {
+        padding: 4%;
+    }
+    .characteristics {
+        height: initial;
+        flex-direction: column;
+        padding: 6%;
+    }
+    .characteristics__item {
+        margin: 20px 0;
+        width: initial;
+    }
+    .testimonies h2 {
+        margin: 15px 0;
+    }
+    .testimonies__block {
+        height: initial;
+        flex-direction: column;
+    }
+    .testimonies__item {
+        margin: 0 0 15px 0;
+    }
+    .testimonies__item:last-child {
+        margin-bottom: 15px;
+    }
+}

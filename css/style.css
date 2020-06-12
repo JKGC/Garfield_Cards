@@ -1,0 +1,322 @@
+/* var */
+:root {
+    --green-color: #7ACC2D;
+    --white-color: #ffffff;
+    --black-color: #313337;
+    /* tipografy */
+    --size-letter: 15px;
+    /* padding */
+    --padding: 10px;
+    /* box shadow */
+    --shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+
+/* var fin */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+nav {
+    font-size: var(--size-letter);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+    background-color: var(--green-color);
+}
+.nav ul {
+    display: flex;
+}
+.nav li {
+    list-style: none;
+    padding-left: 20px;
+}
+.nav li a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+.nav li a:hover {
+    color: var(--white-color);
+    font-weight: 500;
+}
+.main {
+    padding: 15%;
+    text-align: center;
+}
+.content a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+.products {
+    background-image: url("/images/curve.png");
+    max-height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 20%;
+    display: flex;
+}
+.product {
+    padding: var(--padding);
+    margin-top: -280px;
+}
+.product .content {
+    background-color: var(--white-color);
+    padding: var(--padding);
+    box-shadow: var(--shadow);
+}
+.content__img {
+    text-align: center;
+}
+.content__img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.content a {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--padding);
+    font-size: var(--size-letter);
+    color: var(--white-color);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.content__button:hover {
+    background-color: #5e9e22;
+}
+/* characteristics */
+.characteristics {
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #EEEEEE;
+}
+.characteristics__item {
+    width: 180px;
+    text-align: center;
+}
+.characteristics__item img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+}
+.characteristics__item h3 {
+    font-size: 17px;
+    padding-bottom: 3px;
+}
+.characteristics__item p {
+    font-size: 12px;
+}
+/* characteristics end*/
+
+
+/* testimonies */
+.testimonies h2 {
+    text-align: center;
+    margin-top: 80px;
+}
+.testimonies__block {
+    align-items: center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.testimonies__item {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+    width: 220px;
+    box-shadow: 0px 0 8px 5px #e6e5e9;
+}
+.testimonies__item:last-child {
+    margin: 0;
+}
+.testimonies__item img {
+    width: inherit;
+    height: 100px;
+    object-fit: cover;
+}
+.testimonies__item--description {
+    padding: var(--padding);
+}
+.testimonies__item--description p {
+    font-size: 12px;
+}
+/* testimonies end*/
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+    background-color: var(--black-color);
+    font-size: 12px;
+    height: 60px;
+}
+footer a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+footer a:hover {
+    font-weight: 500;
+}
+/* footer end */
+
+/*//////////////////////////////////
+grid style
+////////////////////////////////////*
+
+/* product seccion */
+.title-products {
+    width: 80%;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+.main-products__content {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 27%));
+    grid-template-rows: 230px;
+    grid-template-areas: "image info info";
+    grid-column-gap: 10px;
+}
+.image {
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+}
+.info {
+    grid-area: info;
+    justify-self: center;
+    align-self: center;
+}
+.main-products__content img {
+    width: 100%;/* 
+    height: 100%; */
+    object-fit: cover;
+    align-self: center;
+}
+.leftitem {
+    grid-template-areas: "info info image";
+}
+.main-products {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 27%));
+    grid-template-rows: repeat(3, 230px);
+    grid-template-areas: "first first first" "second second second" "third third third";
+    grid-row-gap: 100px;
+}
+.first {
+    grid-area: first;
+}
+.second {
+    grid-area: second;
+}
+.third {
+    grid-area: third;
+    align-self: start;
+}
+/* product seccion end */
+
+/* checkout */
+.checkout {
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.checkout__product {
+    border-radius: 10px;
+    height: 308px;
+    padding: 40px 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 0 8px 5px #e6e5e9;
+    margin-right: 3%;
+}
+.checkout__product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 5%;
+}
+.checkout__product h3, p {
+    text-align: left;
+}
+.checkout__input {
+    border-radius: 10px;
+    height: 362px;
+    box-shadow: 0px 0 8px 5px #e6e5e9;
+    width: 350px;
+    padding: 40px 20px;
+}
+.checkout__input form {
+    display: flex;
+    flex-direction: column;
+}
+.checkout__input label, input {
+    margin-bottom: 10px;
+}
+.checkout__input input {
+    padding: 10px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid var(--black-color);
+}
+.checkout__input button {
+    background-color: var(--green-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 15px;
+    color: var(--white-color);
+    font-weight: 500;
+}
+.checkout__input button:hover {
+    background-color: #63bb0f;
+}
+/* checkout end */
+
+/* success and failure */
+.success {
+    background-color: black;
+}
+.success__content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success__content img {
+    width: 150px;
+}
+
+.success__content {
+    color: var(--white-color);
+}
+.success__content a {
+    color: var(--green-color);
+    font-weight: 600;
+}
+.img-error {
+    object-fit: cover;
+    height: 100px;
+    width: 200px;
+}
+
+
+/* success and failure end */
