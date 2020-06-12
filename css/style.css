@@ -57,12 +57,12 @@ nav {
     max-height: 50px;
     background-size: cover;
     background-position: center top;
-    padding: 20%;
+    padding: 15%;
     display: flex;
 }
 .product {
     padding: var(--padding);
-    margin-top: -280px;
+    margin-top: -320px;
 }
 .product .content {
     background-color: var(--white-color);
