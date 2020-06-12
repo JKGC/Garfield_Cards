@@ -53,7 +53,7 @@ nav {
     color: var(--white-color);
 }
 .products {
-    background-image: url("/images/curve.png");
+    background-image: url("https://raw.githubusercontent.com/JaonstGC/Garfield_Cards/master/images/images/curve.png");
     max-height: 50px;
     background-size: cover;
     background-position: center top;
